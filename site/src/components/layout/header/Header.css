@@ -1,0 +1,7 @@
+.header {
+    display: flex;
+    justify-content: space-between; /* Ajuste para melhor controle do espaçamento */
+    align-items: center;
+    width: 100%;
+    background-color: #FEF7FF;
+}

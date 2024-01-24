@@ -1,0 +1,24 @@
+.sidebar-button {
+    border: none;
+    background-color: transparent;
+}
+
+.sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #6750A4;
+    border-radius: 10px;
+    padding: 45px;
+}
+
+.sidebar-button.first {
+    margin-bottom: 30px; /* ou margin-top, ajuste conforme necessário */
+}
+
+.sidebar-button.rest {
+    margin-bottom: 10px; /* ou margin-top, ajuste conforme necessário */
+}
+

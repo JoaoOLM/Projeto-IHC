@@ -1,0 +1,14 @@
+.accessibility-button {
+    border: none;
+    background-color: transparent;
+}
+
+.accessibility-tab {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #ddd;
+    /* Cor de fundo da aba de acessibilidade */
+}
