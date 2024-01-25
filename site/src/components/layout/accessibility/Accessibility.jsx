@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './Accessibility.css'; // Importe o estilo específico do botão de acessibilidade se houver
-import { MdAccessible } from "react-icons/md";
+import { MdSettingsAccessibility } from "react-icons/md";
 
 const AccessibilityButton = () => {
     const [accessibilityOpen, setAccessibilityOpen] = useState(false);
@@ -10,7 +10,7 @@ const AccessibilityButton = () => {
     return (
         <div>
             <div className='accessibility-button' onClick={toggleAccessibility}>
-                <MdAccessible size={20} color='#1D1B20' />
+                <MdSettingsAccessibility size={30} color='#1D1B20' />
             </div>
 
             {/* Aba de Acessibilidade */}

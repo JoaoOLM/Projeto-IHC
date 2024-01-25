@@ -31,24 +31,19 @@ body {
     font-size: 16px;
 }
 
-/* Espaçamento entre botões */
-.button+.button {
-    margin-left: 10px;
-}
-
 .current-time {
     font-size: 18px;
     margin: 10px;
 }
 
-.image-container {
+.image-robot-home {
     display: flex; /* Adicionando flex para garantir que os elementos se ajustem corretamente */
     justify-content: center; /* Centralizando na horizontal */
     align-items: center;
     height: 100%; /* Garantindo altura total do contêiner */
 }
 
-.text-container {
+.text-home {
     text-align: center;
     margin-top: 40px;
     font-family: 'Rigtheous', sans-serif;

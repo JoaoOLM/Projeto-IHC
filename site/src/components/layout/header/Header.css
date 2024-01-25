@@ -1,7 +1,26 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .header {
-    display: flex;
-    justify-content: space-between; /* Ajuste para melhor controle do espaçamento */
-    align-items: center;
     width: 100%;
+    height: 100%;
     background-color: #FEF7FF;
+    padding: 0;  /* Certifique-se de que o padding é 0 para evitar espaços indesejados */
+}
+
+.header-items {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.current-time {
+    font-size: 18px;
+    margin: 0;
+    margin-top: 10px;
 }

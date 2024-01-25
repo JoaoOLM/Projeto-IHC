@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import './SideBar.css'; // Importe o estilo específico da barra lateral se houver
+import { Link } from 'react-router-dom';
+import './SideBar.css'; 
+
 import { MdMenu, MdHouse, MdOutlineQuestionMark, MdStackedBarChart, MdSettings } from "react-icons/md";
 
 const Sidebar = () => {
@@ -22,18 +24,29 @@ const Sidebar = () => {
                     </div>
 
                     <div className="sidebar-button rest" onClick={toggleSidebar}>
-                        <MdHouse size={30} color='#fff' />
+                        <Link to="/home">
+                            <MdHouse size={30} color='#fff' />
+                            <span className='icon-text'>Home</span>
+                        </Link>
                     </div>
                     <div className="sidebar-button rest" onClick={toggleSidebar}>
-                        <MdOutlineQuestionMark size={30} color='#fff' />
+                        <Link to='/about'>
+                            <MdOutlineQuestionMark size={30} color='#fff' />
+                            <span className='icon-text'>Sobre</span>
+                        </Link>
                     </div>
                     <div className="sidebar-button rest" onClick={toggleSidebar}>
-                        <MdStackedBarChart size={30} color='#fff' />
+                        <Link to='/version'>
+                            <MdStackedBarChart size={30} color='#fff' />
+                            <span className='icon-text'>Versão</span>
+                        </Link>
                     </div>
                     <div className="sidebar-button rest" onClick={toggleSidebar}>
-                        <MdSettings size={30} color='#fff' />
+                        <Link to='/settings' >
+                            <MdSettings size={30} color='#fff' />
+                            <span className='icon-text'>Configurações</span>
+                        </Link>
                     </div>
-
                 </div>
             )}
         </div>

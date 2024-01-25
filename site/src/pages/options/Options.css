@@ -1,9 +1,7 @@
-.text-container {
-    text-align: center;
-    margin-top: 40px;
-    font-family: 'Rigtheous', sans-serif;
-    font-size: 26px;
-    font-weight: bold;
+html,
+body {
+    height: 100%;
+    margin: 0;
 }
 
 .Options {
@@ -13,4 +11,56 @@
     min-height: 100vh;
     padding: 20px;
     background-color: #FEF7FF;
+}
+
+.text-options {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Rigtheous', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.text-image {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Rigtheous', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    /* Alinha verticalmente */
+    margin-right: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* Ajuste conforme necessário */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-left: 30px;
+    /* Espaçamento entre as colunas */
+}
+
+.button-option {
+    margin-bottom: 50px;
+    width: 400px; /* Tamanho fixo para os botões */
+    height: 150px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6750A4;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
 }
