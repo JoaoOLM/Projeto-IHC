@@ -1,7 +1,9 @@
+@import '~typeface-righteous/index.css';
+
 .text-about {
     text-align: justify;
     margin-top: 40px;
-    font-family: 'Rigtheous', sans-serif;
+    font-family: 'Righteous', sans-serif;
     font-size: 26px;
     font-weight: bold;
     max-width: 600px;

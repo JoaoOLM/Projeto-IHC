@@ -4,7 +4,9 @@ import './FaceScan.css';
 const FaceScan = () => {
 
     return (
-        <div></div>
+        <div className='facescan'>
+            
+        </div>
     );
 };
 

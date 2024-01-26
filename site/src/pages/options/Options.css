@@ -1,3 +1,5 @@
+@import '~typeface-righteous/index.css';
+
 html,
 body {
     height: 100%;
@@ -16,15 +18,15 @@ body {
 .text-options {
     text-align: center;
     margin-top: 10px;
-    font-family: 'Rigtheous', sans-serif;
+    font-family: 'Righteous', sans-serif;
     font-size: 26px;
-    font-weight: bold;
+    font-weight: regular;
 }
 
 .text-image {
     text-align: center;
     margin-top: 10px;
-    font-family: 'Rigtheous', sans-serif;
+    font-family: 'Righteous', sans-serif;
     font-size: 25px;
     font-weight: normal;
 }
@@ -63,4 +65,5 @@ body {
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    font-family: 'Righteous', sans-serif;
 }
