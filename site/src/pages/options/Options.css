@@ -15,7 +15,7 @@ body {
 
 .text-options {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 10px;
     font-family: 'Rigtheous', sans-serif;
     font-size: 26px;
     font-weight: bold;
@@ -54,7 +54,7 @@ body {
 
 .button-option {
     margin-bottom: 50px;
-    width: 400px; /* Tamanho fixo para os botões */
+    width: 300px; /* Tamanho fixo para os botões */
     height: 150px;
     padding: 10px 20px;
     font-size: 16px;

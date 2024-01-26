@@ -26,24 +26,32 @@ const Sidebar = () => {
                     <div className="sidebar-button rest" onClick={toggleSidebar}>
                         <Link to="/home">
                             <MdHouse size={30} color='#fff' />
+                        </Link>
+                        <Link to="/home">
                             <span className='icon-text'>Home</span>
                         </Link>
                     </div>
                     <div className="sidebar-button rest" onClick={toggleSidebar}>
                         <Link to='/about'>
                             <MdOutlineQuestionMark size={30} color='#fff' />
+                        </Link>
+                        <Link to='/about'>
                             <span className='icon-text'>Sobre</span>
                         </Link>
                     </div>
                     <div className="sidebar-button rest" onClick={toggleSidebar}>
                         <Link to='/version'>
                             <MdStackedBarChart size={30} color='#fff' />
+                        </Link>
+                        <Link to='/version'>
                             <span className='icon-text'>Versão</span>
                         </Link>
                     </div>
                     <div className="sidebar-button rest" onClick={toggleSidebar}>
                         <Link to='/settings' >
                             <MdSettings size={30} color='#fff' />
+                        </Link>
+                        <Link to='/settings' >
                             <span className='icon-text'>Configurações</span>
                         </Link>
                     </div>
