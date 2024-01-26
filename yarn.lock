@@ -6,3 +6,8 @@ react-icons@5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-5.0.1.tgz#1694e11bfa2a2888cab47dcc30154ce90485feee"
   integrity sha512-WqLZJ4bLzlhmsvme6iFdgO8gfZP17rfjYEJ2m9RsZjZ+cc4k1hTzknEz63YS1MeT50kVzoa1Nz36f4BEx+Wigw==
+
+typeface-righteous@1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-righteous/-/typeface-righteous-1.1.13.tgz#3e7b9037f7a883b4dc7effb544d512a755be66bb"
+  integrity sha512-x25dK5Q5R7f+fPcFvUeS4QlWPor1gyJPTq/JzdxjGAipSnc7SkJX7dU6zG5qUnEHeObSfda0BdPDOfwUX8n+Zw==

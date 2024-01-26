@@ -10,10 +10,10 @@ const Version = () => {
         <div className='Version'>
             {/* Seção de conteúdo no meio da página */}
             <div className='image-robot-version'>
-                <img src={ImagemRobo} alt='Descrição da imagem' width='240' height='160' />
+                <img src={ImagemRobo} alt='Robô' width='240' height='160' />
             </div>
             <div className='chat'>
-                <img className='image-chat' src={ImagemChat} alt='Chat Image' width='240' height='160' />
+                <img className='image-chat' src={ImagemChat} alt='Chat' width='240' height='160' />
             </div>
             <div className='text-version'>
                 <p> Versão 0.1 </p>
