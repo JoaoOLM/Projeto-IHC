@@ -29,6 +29,8 @@ html, body {
 }
 
 .sidebar-button.rest {
+    display: flex;
+    align-items: center;
     margin-top: 15px; /* ou margin-top, ajuste conforme necessário */
     margin-left: 35px;
 }

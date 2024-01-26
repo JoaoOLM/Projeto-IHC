@@ -40,7 +40,7 @@ const Options = () => {
                 <div className='image-robot-options'>
                     <img src={ImagemRobo} alt='Descrição da imagem' width='105' height='70' />
                 </div>
-                <div className='text-image'>
+                <div className='text-options'>
                     Espero que seu dia esteja sendo excelente!
                 </div>
             </div>
