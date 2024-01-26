@@ -20,6 +20,8 @@ html, body {
 }
 
 .current-time {
+    font-family: 'Rigtheous', sans-serif;
+    font-weight: bold;
     font-size: 18px;
     margin: 0;
     margin-top: 10px;
