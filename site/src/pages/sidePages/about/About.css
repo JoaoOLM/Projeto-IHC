@@ -5,9 +5,10 @@
     margin-top: 40px;
     font-family: 'Righteous', sans-serif;
     font-size: 26px;
-    font-weight: regular;
-    margin-left: 100px;
-    margin-right: 100px;
+    font-weight: bold;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .About {

@@ -12,6 +12,7 @@ html, body {
 }
 
 .header-items {
+    text-align: center;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -20,6 +21,9 @@ html, body {
 }
 
 .current-time {
+    font-weight: bold;
+    font-family: 'Rigtheous', sans-serif;   
+    font-size: 18px;    
     font-family: 'Rigtheous', sans-serif;
     font-weight: bold;
     font-size: 18px;

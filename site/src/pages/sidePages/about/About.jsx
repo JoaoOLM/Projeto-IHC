@@ -14,17 +14,24 @@ const About = () => {
 
             {/* Texto inferior */}
             <div className='text-about'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium 
-                    velit nec sem laoreet, sit amet laoreet elit maximus. Cras dignissim porta dui. 
-                    Phasellus et lectus at massa posuere vehicula. Nullam eget efficitur urna, 
-                    et mattis odio. Nullam vitae ante egestas, rutrum ipsum sed, ultrices enim. 
-                    Nullam id bibendum tellus, vitae congue lacus. Vestibulum non semper nunc.
-                    Aliquam id lectus metus. Morbi sit amet tortor vel urna placerat pharetra. 
-                    Aliquam in hendrerit ligula. In hac habitasse platea dictumst. Cras sodales, 
-                    justo eget convallis laoreet, nibh lectus pretium purus, in imperdiet diam 
-                    ante sed velit. Aenean venenatis cursus suscipit. Nullam mattis velit turpis, 
-                    mattis tempus eros malesuada tempor. Aliquam dui nisi, efficitur sit amet 
-                    augue ut, posuere gravida ante.</p>
+                <p>
+                    Olá! Eu sou o robô do DC, e estou aqui para tornar nosso departamento
+                    um lugar ainda mais acolhedor. Minha principal função é o reconhecimento
+                    facial, onde me adapto para entender o que você está passando
+                    e tentar oferecer suporte para que você se sinta melhor. 
+                </p>
+                <p>
+                    Além disso, ofereço um guia de respiração para ajudá-lo a se
+                    acalmar em momentos de tensão, como antes daquela prova difícil.
+                    Acredito que uma respiração consciente pode fazer toda a diferença
+                    no seu bem-estar. Também tenho um player de música com uma
+                    seleção especial das melhores músicas, separadas pelo gênero.
+                </p>
+                <p>
+                    Estou aqui para ser seu companheiro digital, sempre disponível
+                    para ajudá-lo a enfrentar os desafios do dia a dia. Conte comigo
+                    para tornar cada dia mais agradável para você.
+                </p>
             </div>
         </div>
     );
