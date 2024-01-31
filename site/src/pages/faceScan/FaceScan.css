@@ -1,8 +1,19 @@
-.facescan{ 
+.facescan {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
     padding: 20px;
     background-color: #FEF7FF;
+    position: relative;
+    z-index: 1; /* Valor padrão menor */
+}
+
+.video {
+    width: 700px;
+    height: 480px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

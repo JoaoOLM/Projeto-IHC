@@ -12,6 +12,7 @@ html, body {
 }
 
 .sidebar {
+    z-index: 2; /* Valor maior que o z-index da página */
     position: absolute;
     left: 0;
     top: 0;
