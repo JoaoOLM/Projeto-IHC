@@ -1,0 +1,247 @@
+.Respiration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #FEF7FF;
+}
+
+
+
+ /*texto INSPIRE E EXPIRE*/
+.text-expire-inspire {
+    display: flex;
+    justify-content: center;
+}
+
+.inspire-text {
+    font-weight: bold;
+    color: #6750A4;
+}
+
+.expire-text {
+    font-style: bold;
+    color: #6750A4;
+}
+
+
+
+/*Textos Robo e Respiração guiada*/
+.text-options {                  
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Rigtheous', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button-option {
+    display: flex;
+    width: 200px; 
+    height: 50px;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6750A4;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.circular-button {
+    position: absolute;
+    top: 389px; /* Ajuste conforme necessário */
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #6750A4;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 3;
+}
+
+.circular-button2 {
+    position: absolute;
+    top: 389px; /* Ajuste conforme necessário */
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #9367e6;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    pointer-events: none; /* Não clicável */
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    fill: rgb(137, 65, 231);
+
+}
+
+.rowl {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    fill: rgb(137, 65, 231);
+
+}
+
+.spaced-buttons {
+    display: flex;
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    margin-top: 20px; /* Ajuste conforme necessário */
+}
+
+.spaced-buttons > div {
+    margin-right: 40px; /* Ajuste a margem conforme necessário */
+}
+  
+  
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: margin-left 0.5s; 
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .animated {                                         
+        animation: Encolher 10s linear;
+        animation-iteration-count: var(iterationCount); 
+    }
+}
+
+@keyframes Encolher {
+    0% {
+        transform: scale(1);
+    }
+    45% {
+        transform: scale(0.15);
+    }
+    47% {
+        transform: scale(0.15);
+    }
+
+    90% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animated {
+    position: absolute;
+    top: 389px;
+    margin-bottom: 320px;
+    width: 200px;
+    height: 200px;
+    padding: 10px; 
+    font-size: 16px;
+    background-color: #6750A4;
+    color: #fff;
+    border: none;
+    border-radius: 50%; 
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Estilos para o controle deslizante */
+.slider-container {
+    position: relative;
+    width: 650px;
+    margin-bottom: 20px; /* Adiciona espaço abaixo do slider e contador */
+}
+
+.slider-value {
+    position: absolute;
+    top: 673px;
+    right: 240px;
+    padding: 0 5px; /* Adiciona espaço interno ao redor do contador */
+    font-size: 20px;
+    color: #6750A4;/* Cor do contador */
+    font-family: 'Rigtheous', sans-serif;
+    font-weight: bold;
+}
+
+.slider {
+    position: absolute;
+    top: 670px;
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    -webkit-appearance: none;
+    width: 650px;
+    height: 20px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+/* Estilos para o controle deslizante ativo (quando está sendo arrastado) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: #6750A4; /* Altera a cor do ponto para roxo */
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    top: -8px; /* Ajusta a posição verticalmente */
+}
+
+/* Estilos para a faixa do controle deslizante (quando está sendo arrastado) */
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #8A2BE2; /* Altera a cor do ponto para roxo */
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Estilos para a faixa do controle deslizante (quando está sendo arrastado) */
+.slider::-moz-range-track {
+    width: 100%;
+    height: 10px;
+    background: #b11313;
+    border: none;
+}
+
+/* Estilos para a faixa do controle deslizante (quando está sendo arrastado) */
+.slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    background: #d3d3d3;
+    border: none;
+}
