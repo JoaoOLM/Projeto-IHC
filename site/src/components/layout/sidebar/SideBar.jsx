@@ -15,7 +15,10 @@ const Sidebar = () => {
 
     const navigate = useNavigate();
 
-    const handleGoBack = () => {
+    const handleGoBack = (evt) => {
+        if (evt) {
+            evt.stopPropagation();
+        }
         navigate(-1);
         toggleSidebar();
     };

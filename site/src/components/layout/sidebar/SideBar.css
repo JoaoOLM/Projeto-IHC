@@ -39,7 +39,7 @@ html, body {
 .sidebar-button.last {
     display: flex;
     align-items: center;
-    margin-top: 450px; /* ou margin-top, ajuste conforme necessário */
+    margin-top: 400px; /* ou margin-top, ajuste conforme necessário */
     margin-left: 35px;
 }
 
