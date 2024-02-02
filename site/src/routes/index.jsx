@@ -9,7 +9,15 @@ import Meditation from '../pages/meditation/Meditation'
 import Respiration from '../pages/respiration/Respiration'
 import Music from '../pages/music/Music'
 import FaceScan from '../pages/faceScan/FaceScan'
-
+import ChechEmotion from '../pages/faceScan/checkEmotion/CheckEmotion'
+import EmotionFail from '../pages/faceScan/checkEmotion/emotionFail/EmotionFail'
+import Feliz from '../pages/faceScan/checkEmotion/emotions/feliz/Feliz'
+import Medo from '../pages/faceScan/checkEmotion/emotions/medo/Medo'
+import Nervoso from '../pages/faceScan/checkEmotion/emotions/nervoso/Nervoso'
+import Neutro from '../pages/faceScan/checkEmotion/emotions/neutro/Neutro'
+import Nojo from '../pages/faceScan/checkEmotion/emotions/nojo/Nojo'
+import Surpresa from '../pages/faceScan/checkEmotion/emotions/surpresa/Surpresa'
+import Triste from '../pages/faceScan/checkEmotion/emotions/triste/Triste'
 
 export const AppRoutes = ( ) => {
 
@@ -25,6 +33,15 @@ export const AppRoutes = ( ) => {
             <Route path="/respiration" element={<Respiration />}/>
             <Route path="/music" element={<Music />}/>
             <Route path="/facescan" element={<FaceScan />}/>
+            <Route path="/checkemotion/:emocao" element={<ChechEmotion />}/>
+            <Route path="/checkemotion/emotionfail" element={<EmotionFail />}/>
+            <Route path="Happy" element={<Feliz />}/>
+            <Route path="Fear" element={<Medo />}/>
+            <Route path="Nervous" element={<Nervoso />}/>
+            <Route path="Neutral" element={<Neutro />}/>
+            <Route path="Disgust" element={<Nojo />}/>
+            <Route path="Surprise" element={<Surpresa />}/>
+            <Route path="Sad" element={<Triste />}/>
 
         </Routes>
     )

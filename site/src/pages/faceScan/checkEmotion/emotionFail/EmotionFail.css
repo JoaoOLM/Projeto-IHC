@@ -1,0 +1,52 @@
+@import '~typeface-righteous/index.css';
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.emotionfail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #FEF7FF;
+    position: relative;
+    z-index: 1; /* Valor padrão menor */
+}
+
+.text-fail {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: 'Righteous', sans-serif;
+    font-size: 26px;
+    font-weight: regular;
+}
+
+.button-fail {
+    border: none;
+    border-radius: 50px;
+    padding: 20px 40px;
+    background-color: #6750A4;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    width: 200px; /* Defina a largura desejada */
+    height: 60px; /* Defina a altura desejada */
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.row-check {
+    display: flex;
+    align-items: center;
+    /* Alinha verticalmente */
+    margin-right: 30px;
+}
+
+.column {
+    flex-direction: column;
+}

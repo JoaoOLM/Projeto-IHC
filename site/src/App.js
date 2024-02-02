@@ -9,7 +9,7 @@ import Header from './components/layout/header/Header'
 function App() {
   return (
     <Router>
-      <Header/>
+      <Header />
       <AppRoutes />
     </Router>
   );
