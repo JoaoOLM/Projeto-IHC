@@ -29,7 +29,7 @@ const Home = () => {
 
                 {/* Texto inferior */}
                 <div className='text-home'>
-                    <p>Meu nome é ... e vou te acompanhar pelo aplicativo</p>
+                    <p>Sou o robô do DC e vou te acompanhar pelo aplicativo</p>
                     <button className='button' onClick={handleIniciarClick}>
                         Iniciar
                     </button>

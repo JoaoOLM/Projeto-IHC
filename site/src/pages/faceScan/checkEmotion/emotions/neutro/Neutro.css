@@ -1,0 +1,30 @@
+@import '~typeface-righteous/index.css';
+
+.text-version {
+    text-align: center;
+    margin-top: 215px;
+    font-family: 'Righteous', sans-serif;
+    font-size: 20px;
+    font-weight: regular;
+}
+
+.Version {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #FEF7FF;
+}
+
+.image-robot-version {
+    position: absolute;
+    top: 350px;
+    left: 370px;
+}
+
+.image-chat {
+    position: absolute;
+    top: 280px;
+    left: 520px;
+}

@@ -36,6 +36,13 @@ html, body {
     margin-left: 35px;
 }
 
+.sidebar-button.last {
+    display: flex;
+    align-items: center;
+    margin-top: 450px; /* ou margin-top, ajuste conforme necessário */
+    margin-left: 35px;
+}
+
 .icon-text {
     text-align: center;
     font-family: 'Rigtheous', sans-serif;

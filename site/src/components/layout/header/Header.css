@@ -11,8 +11,7 @@ html, body {
     padding: 0;  /* Certifique-se de que o padding é 0 para evitar espaços indesejados */
 }
 
-.header-items {
-    text-align: center;
+.header .header-items {
     align-items: center;
     display: flex;
     justify-content: space-between;

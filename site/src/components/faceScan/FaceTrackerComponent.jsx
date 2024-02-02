@@ -27,29 +27,32 @@ const FaceTrackerComponent = (props) => {
             if (evt.detail && evt.detail.rects && evt.detail.rects.length > 0) {
                 const $vid = props.videoEl.current;
 
-                const scale_w = $vid.offsetWidth / sdk_w.current;
-                const scale_h = $vid.offsetHeight / sdk_h.current;
+                if ($vid) {
+                    
+                    const scale_w = $vid.offsetWidth / sdk_w.current;
+                    const scale_h = $vid.offsetHeight / sdk_h.current;
 
-                const y_diff = $vid.offsetHeight - (sdk_h.current * 2);
-                const x_diff = $vid.offsetWidth - (sdk_w.current * 2);
+                    const y_diff = $vid.offsetHeight - (sdk_h.current * 2);
+                    const x_diff = $vid.offsetWidth - (sdk_w.current * 2);
 
-                const offset_x = Math.round(x_diff / 2);
-                const offset_y = Math.round(y_diff / 2);
-                faceTracker.current.style.width =
-                    Math.round(evt.detail.rects[0].width * scale_w) + "px";
-                faceTracker.current.style.height =
-                    Math.round(evt.detail.rects[0].height * scale_h) + "px";
-                faceTracker.current.style.top =
-                    Math.round(evt.detail.rects[0].y * scale_h) +
-                    (y_diff > x_diff ? offset_y : 0) +
-                    "px";
-                faceTracker.current.style.left =
-                    Math.round(evt.detail.rects[0].x * scale_w) +
-                    (y_diff < x_diff ? offset_x : 0) +
-                    "px";
+                    const offset_x = Math.round(x_diff / 2);
+                    const offset_y = Math.round(y_diff / 2);
+                    faceTracker.current.style.width =
+                        Math.round(evt.detail.rects[0].width * scale_w) + "px";
+                    faceTracker.current.style.height =
+                        Math.round(evt.detail.rects[0].height * scale_h) + "px";
+                    faceTracker.current.style.top =
+                        Math.round(evt.detail.rects[0].y * scale_h) +
+                        (y_diff > x_diff ? offset_y : 0) +
+                        "px";
+                    faceTracker.current.style.left =
+                        Math.round(evt.detail.rects[0].x * scale_w) +
+                        (y_diff < x_diff ? offset_x : 0) +
+                        "px";
 
-                faceTracker.current.style.display = "block";
-                resetTimeout();
+                    faceTracker.current.style.display = "block";
+                    resetTimeout();
+                }
             }
 
         }

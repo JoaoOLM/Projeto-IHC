@@ -30,7 +30,7 @@ function Respiration() {
     }
 
     return () => clearInterval(timer);
-  }, [isAnimating, displayText]);  
+  }, [isAnimating, displayText]);
 
   const toggleAnimation = () => {   //Animações após click START
     setIsAnimating(prevState => !prevState); // Inverte o estado de animação
@@ -58,19 +58,19 @@ function Respiration() {
 
   useEffect(() => {   //Fim da Animação
     const circle = document.querySelector('.animated');
-  
+
     if (circle) {
       circle.style.animationIterationCount = isAnimating ? iterationCount : '0';
-  
+
       const animationEndHandler = () => {
         setTextInsideCircle("Selecione o tempo desejado!");
         setShowControls(true);
         setDisplayText(""); // Limpa o texto expire/inspire
         setIsAnimating(false); // Define isAnimating como false quando a animação do círculo terminar
       };
-  
+
       circle.addEventListener('animationend', animationEndHandler);
-  
+
       return () => {
         circle.removeEventListener('animationend', animationEndHandler);
       };
@@ -90,7 +90,7 @@ function Respiration() {
           {textInsideCircle}
         </div>
       </div>
-      
+
       {/*Bloco Opções de Tempo*/}
       <div className='rowl spaced-buttons'>
         {showControls && !isAnimating && (
@@ -102,10 +102,10 @@ function Respiration() {
               <button className='button-option'>3 MINUTOS</button>
             </div>
             <div onClick={() => setIteration(30)}>
-              <button className='button-option'>5 MINUTOS</button>         
+              <button className='button-option'>5 MINUTOS</button>
             </div>
             <div onClick={() => setIteration(60)}>
-              <button className='button-option'>10 MINUTOS</button>         
+              <button className='button-option'>10 MINUTOS</button>
             </div>
           </>
         )}
@@ -123,17 +123,17 @@ function Respiration() {
       </div>
 
       {/*Bloco SLIDER*/}
-      <div className="row">                     
+      <div className="row">
         {showControls && !isAnimating && (
           <>
-            <input 
-             type="range" 
-             min="1" 
-             max="30" // Limite de 30 minutos
-             value={sliderValue} 
-             onChange={handleSliderChange} 
-             className="slider"
-           />
+            <input
+              type="range"
+              min="1"
+              max="30" // Limite de 30 minutos
+              value={sliderValue}
+              onChange={handleSliderChange}
+              className="slider"
+            />
             <span className="slider-value">{sliderValue} MIN</span> {/* Mostra o valor atual do slider */}
           </>
         )}

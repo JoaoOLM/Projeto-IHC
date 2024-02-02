@@ -1,9 +1,10 @@
-import React, { useEffect, useRef, useContext, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useExternalScript } from '../../helpers/ai-sdk/externalScriptsLoader';
 import { getAiSdkControls } from '../../helpers/ai-sdk/loader';
 import FaceTrackerComponent from '../../components/faceScan/FaceTrackerComponent';
 
 import './FaceScan.css';
+import { useNavigate } from 'react-router';
 
 const FaceScan = () => {
   const mphToolsState = useExternalScript('https://sdk.morphcast.com/mphtools/v1.0/mphtools.js');
@@ -11,6 +12,7 @@ const FaceScan = () => {
   const videoEl = useRef(null);
   const [lastEmotion, setLastEmotion] = useState('');
   const [emotionCount, setEmotionCount] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     videoEl.current = document.getElementById('videoEl');
@@ -36,7 +38,7 @@ const FaceScan = () => {
 
         if (emotionCount + 1 === 30) {
           console.log(`Enviando emoção dominante: ${dominantEmotion}`);
-          // Faça algo com a emoção, por exemplo, navegar para outra página
+          navigate(`/checkemotion/${dominantEmotion}`);
           setEmotionCount(0);
           setLastEmotion('');
         }
@@ -51,13 +53,13 @@ const FaceScan = () => {
     return () => {
       window.removeEventListener('CY_FACE_EMOTION_RESULT', handleEmotion);
     };
-  }, [lastEmotion, emotionCount]);
+  }, [lastEmotion, emotionCount, navigate]);
 
   return (
     <div className='facescan'>
-      <h1>
-        Enquadre seu rosto abaixo para que eu possa detectar o que você está sentindo.
-      </h1>
+      <div className='text-face'>
+        Centralize seu rosto e espere alguns segundos.
+      </div>
       <div className='video'>
         <video id='videoEl' ref={videoEl} autoPlay playsInline></video>
         <FaceTrackerComponent videoEl={videoEl}></FaceTrackerComponent>
@@ -67,3 +69,6 @@ const FaceScan = () => {
 };
 
 export default FaceScan;
+
+
+
