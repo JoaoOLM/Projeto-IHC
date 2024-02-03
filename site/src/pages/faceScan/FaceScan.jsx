@@ -36,7 +36,7 @@ const FaceScan = () => {
       if (dominantEmotion === lastEmotion) {
         setEmotionCount(emotionCount + 1);
 
-        if (emotionCount + 1 === 30) {
+        if (emotionCount + 1 === 10) {
           console.log(`Enviando emoção dominante: ${dominantEmotion}`);
           navigate(`/checkemotion/${dominantEmotion}`);
           setEmotionCount(0);
