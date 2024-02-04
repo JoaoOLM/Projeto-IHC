@@ -1,6 +1,7 @@
 import React from 'react'
 import './Neutro.css';
 import { useNavigate } from 'react-router-dom';
+//import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
 
 import ImagemRoboNeutro from "../../../../../assets/home/robo-neutro.svg"
 
@@ -14,6 +15,7 @@ const Neutro = () => {
     };
 
     return (
+        //getExpressionByNumber(9);
         <div className='neutro'>
             <div >
                 <img src={ImagemRoboNeutro} alt="Robo Neutro" width={300} height={200}/>

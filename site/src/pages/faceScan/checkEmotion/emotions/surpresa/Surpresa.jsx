@@ -1,11 +1,13 @@
 import React from 'react'
 import './Surpresa.css';
+//import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
 
 import ImagemRoboSurpresa from "../../../../../assets/home/robo-surpresa.svg"
 
 const Surpresa = () => {
 
     return (
+        //getExpressionByNumber(9);
         <div className='surpresa'>
             <div>
                 <img src={ImagemRoboSurpresa} alt="Robo Surpresa" width={300} height={200}/>

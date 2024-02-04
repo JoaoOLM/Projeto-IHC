@@ -1,11 +1,13 @@
 import React from 'react'
 import './Triste.css';
+//import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
 
 import ImagemRoboTriste from "../../../../../assets/home/robo-triste.svg"
 
 const Triste = () => {
 
     return (
+        //getExpressionByNumber(9);
         <div className='triste'>
             <div className='imagem-robo-triste'>
                 <img src={ImagemRoboTriste} alt="Robo Triste" width={300} height={200}/>
