@@ -1,6 +1,7 @@
 import React from 'react'
 import './Nervoso.css';
 import { useNavigate } from 'react-router-dom';
+//import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
 
 import ImagemRoboNervoso from "../../../../../assets/home/robo-nervoso.svg"
 
@@ -13,6 +14,7 @@ const Nervoso = () => {
     };
 
     return (
+        //getExpressionByNumber(9);
         <div className='nervoso'>
             <div className='image-robot-home'>
                 <img src={ImagemRoboNervoso} alt='Robo Nervoso' width='300' height='200' />

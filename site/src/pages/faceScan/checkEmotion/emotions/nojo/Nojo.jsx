@@ -1,11 +1,13 @@
 import React from 'react'
 import './Nojo.css';
+//import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
 
 import ImagemRoboNojo from "../../../../../assets/home/robo-nojo.svg"
 
 const Nojo = () => {
 
     return (
+        //getExpressionByNumber(9);
         <div className='nojo'>
             <div>
                 <img src={ImagemRoboNojo} alt="Robo Nojo" width={300} height={200}/>

@@ -6,7 +6,6 @@ import ImagemRoboFeliz from "../../../../../assets/home/robot-svgrepo-com.svg"
 
 
 const Feliz = () => {
-    // Exemplos de chamada das funções
     //getExpressionByNumber(9);
     return (
         <div className='feliz'>
