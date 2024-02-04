@@ -26,27 +26,34 @@ const FaceScan = () => {
       }
     }
     getAiSdk();
-  }, [aiSdkState, mphToolsState]);
+  }, [aiSdkState, mphToolsState, navigate]);
+
+  async function stopSdk() {
+    const { stop } = await getAiSdkControls();
+    await stop();
+  }
 
   useEffect(() => {
-    function handleEmotion(evt) {
+    const handleEmotion = (evt) => {
       const dominantEmotion = evt.detail.output.dominantEmotion || '';
       console.log(dominantEmotion);
 
       if (dominantEmotion === lastEmotion) {
-        setEmotionCount(emotionCount + 1);
+        setEmotionCount((prevCount) => prevCount + 1);
 
-        if (emotionCount + 1 === 10) {
-          console.log(`Enviando emoção dominante: ${dominantEmotion}`);
-          navigate(`/checkemotion/${dominantEmotion}`);
+        if (emotionCount + 1 === 30) {
           setEmotionCount(0);
           setLastEmotion('');
+          stopSdk();
+          console.log(`Enviando emoção dominante: ${dominantEmotion}`);
+          navigate(`/checkemotion/${dominantEmotion}`);
+          window.location.reload();
         }
       } else {
         setLastEmotion(dominantEmotion);
         setEmotionCount(1);
       }
-    }
+    };
 
     window.addEventListener('CY_FACE_EMOTION_RESULT', handleEmotion);
 
@@ -69,6 +76,3 @@ const FaceScan = () => {
 };
 
 export default FaceScan;
-
-
-
