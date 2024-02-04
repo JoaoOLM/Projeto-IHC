@@ -1,14 +1,23 @@
 @import '~typeface-righteous/index.css';
 
 .text-feliz {
+    text-align: justify;
+    font-family: 'Righteous', sans-serif;
+    font-size: 30px;
+    font-weight: regular;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+}
+
+.text-feliz2 {
     text-align: center;
-    margin-top: 215px;
     font-family: 'Righteous', sans-serif;
     font-size: 20px;
     font-weight: regular;
 }
 
-.Version {
+.feliz {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,14 +26,13 @@
     background-color: #FEF7FF;
 }
 
-.image-robot-version {
-    position: absolute;
-    top: 350px;
-    left: 370px;
-}
-
-.image-chat {
-    position: absolute;
-    top: 280px;
-    left: 520px;
+.button-feliz {
+    border: none;
+    border-radius: 50px;
+    padding: 20px 80px;
+    background-color: #6750A4;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 40px;
 }

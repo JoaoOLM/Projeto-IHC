@@ -49,7 +49,7 @@ const CheckEmotion = () => {
                     Acho que sim
                 </button>
                 <button className='button-check2' onClick={handleFail}>
-                    Não exatemente
+                    Não exatamente
                 </button>
             </div>
         </div>

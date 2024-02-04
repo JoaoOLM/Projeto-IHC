@@ -19,8 +19,8 @@ const Sidebar = () => {
         if (evt) {
             evt.stopPropagation();
         }
+        toggleSidebar(evt);
         navigate(-1);
-        toggleSidebar();
     };
 
     useEffect(() => {

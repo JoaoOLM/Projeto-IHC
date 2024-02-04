@@ -1,30 +1,50 @@
 @import '~typeface-righteous/index.css';
 
-.text-version {
-    text-align: center;
-    margin-top: 215px;
-    font-family: 'Righteous', sans-serif;
-    font-size: 20px;
-    font-weight: regular;
-}
-
-.Version {
+.triste {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     min-height: 100vh;
     padding: 20px;
     background-color: #FEF7FF;
 }
 
-.image-robot-version {
-    position: absolute;
-    top: 350px;
-    left: 370px;
+.imagem-triste{
+    display: flex;
 }
 
-.image-chat {
-    position: absolute;
-    top: 280px;
-    left: 520px;
+.text-triste{
+    text-align: justify;
+    font-family: 'Righteous', sans-serif;
+    font-size: 30px;
+    font-weight: regular;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+}
+
+.text-triste2{
+    text-align: justify;
+    font-family: 'Righteous', sans-serif;
+    font-size: 25px;
+    font-weight: regular;
+    margin-top: 20px;
+}
+
+.column1{
+    display:flex;
+    flex-direction: column;
+    margin-left: 200px;
+    margin-right: 20px;
+}
+
+.column2{
+    display:flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 200px;
+}
+
+.conjunto{
+    display: flex;
 }
