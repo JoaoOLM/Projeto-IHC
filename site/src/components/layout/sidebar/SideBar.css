@@ -13,13 +13,14 @@ html, body {
 
 .sidebar {
     z-index: 2; /* Valor maior que o z-index da página */
-    position: absolute;
+    position: fixed; /* Alterado para fixed para manter a posição ao rolar */
     left: 0;
     top: 0;
-    width: 250px;
-    height: 100%;
+    bottom: 0; /* Estende a sidebar até o final da página */
+    width: 250px; /* Largura inicial da sidebar, ajuste conforme necessário */
     background-color: #6750A4;
     border-radius: 0 10px 10px 0; /* Arredonda apenas o lado direito */
+    overflow-y: auto; /* Adicionado para rolar se o conteúdo for maior que a altura */
 }
 
 
