@@ -1,5 +1,3 @@
-const url = `http://192.168.1.100:5000/led/changeExpression/9`
-
 async function fetchData(url) {
     try {
         const response = await fetch(url);
@@ -24,7 +22,7 @@ async function getExpressionByNumber(expressionNumber) {
 }
 
 async function getExpressionByBits(expressionBits) {
-    const url = `http://192.168.1.100:5000/led/changeExpression/${expressionBits}`;
+    const url = `http://192.168.1.100:5000/led/changeExpressionByBits/${expressionBits}`;
     const data = await fetchData(url);
     console.log('Expression by Bits:', data);
 }

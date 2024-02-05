@@ -1,7 +1,7 @@
 import React from 'react'
 import './Surpresa.css';
 import { useNavigate } from 'react-router-dom';
-//import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
+import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
 
 import ImagemRoboSurpresa from "../../../../../assets/home/robo-surpresa.svg"
 
@@ -12,6 +12,7 @@ import {
 } from 'react-icons/md';
 
 const Surpresa = () => {
+    getExpressionByNumber(9);
     const navigate = useNavigate();
 
     const handleMeditacao = () => {

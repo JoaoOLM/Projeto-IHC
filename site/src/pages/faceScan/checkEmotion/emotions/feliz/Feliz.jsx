@@ -1,13 +1,13 @@
 import React from 'react'
 import './Feliz.css';
 import { useNavigate } from 'react-router-dom';
-//import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
+import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
 
 import ImagemRoboFeliz from "../../../../../assets/home/robot-svgrepo-com.svg"
 
 
 const Feliz = () => {
-    //getExpressionByNumber(9);
+    getExpressionByNumber(9);
     const navigate = useNavigate();
 
     const handleDescobrir = () => {

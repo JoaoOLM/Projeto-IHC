@@ -1,12 +1,12 @@
 import React from 'react'
 import './Neutro.css';
 import { useNavigate } from 'react-router-dom';
-//import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
+import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
 
 import ImagemRoboNeutro from "../../../../../assets/home/robo-neutro.svg"
 
 const Neutro = () => {
-
+    getExpressionByNumber(9);
     const navigate = useNavigate();
 
     const handleMeditacao = () => {

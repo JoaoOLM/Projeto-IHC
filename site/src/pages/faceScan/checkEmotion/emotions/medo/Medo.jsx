@@ -1,12 +1,12 @@
 import React from 'react'
 import './Medo.css';
 import { useNavigate } from 'react-router-dom';
-//import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
+import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
 
 import ImagemRoboMedo from "../../../../../assets/home/robo-medo.svg"
 
 const Medo = () => {
-
+    getExpressionByNumber(9);
     const navigate = useNavigate();
 
     const handleDicas = () => {

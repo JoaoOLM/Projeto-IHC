@@ -1,11 +1,11 @@
 import React from 'react'
 import './Triste.css';
-//import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
+import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
 
 import ImagemRoboTriste from "../../../../../assets/home/robo-triste.svg"
 
 const Triste = () => {
-
+    getExpressionByNumber(9);
     return (
         //getExpressionByNumber(9);
         <div className='triste'>

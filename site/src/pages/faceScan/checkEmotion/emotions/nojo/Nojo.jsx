@@ -1,7 +1,7 @@
 import React from 'react'
 import './Nojo.css';
 import { useNavigate } from 'react-router-dom';
-//import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
+import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
 
 import {
     MdSpa,
@@ -11,6 +11,7 @@ import {
 import ImagemRoboNojo from "../../../../../assets/home/robo-nojo.svg"
 
 const Nojo = () => {
+    getExpressionByNumber(9);
     const navigate = useNavigate();
 
     const handleMeditacao = () => {

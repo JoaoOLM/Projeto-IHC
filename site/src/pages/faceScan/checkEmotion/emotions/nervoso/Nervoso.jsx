@@ -1,11 +1,12 @@
 import React from 'react'
 import './Nervoso.css';
 import { useNavigate } from 'react-router-dom';
-//import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
+import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
 
 import ImagemRoboNervoso from "../../../../../assets/home/robo-nervoso.svg"
 
 const Nervoso = () => {
+    getExpressionByNumber(9);
     const navigate = useNavigate();
 
     const handleRespiracao = () => {
