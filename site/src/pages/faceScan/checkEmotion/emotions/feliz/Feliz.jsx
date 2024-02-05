@@ -1,5 +1,6 @@
 import React from 'react'
 import './Feliz.css';
+import { useNavigate } from 'react-router-dom';
 //import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
 
 import ImagemRoboFeliz from "../../../../../assets/home/robot-svgrepo-com.svg"
@@ -7,6 +8,12 @@ import ImagemRoboFeliz from "../../../../../assets/home/robot-svgrepo-com.svg"
 
 const Feliz = () => {
     //getExpressionByNumber(9);
+    const navigate = useNavigate();
+
+    const handleDescobrir = () => {
+        navigate('/Happy/find');
+    };
+
     return (
         <div className='feliz'>
             <div>
@@ -17,7 +24,7 @@ const Feliz = () => {
                 compartilhar essa alegria. Como 
                 posso tornar o seu dia ainda melhor?
             </div>
-            <div className='button-feliz'>
+            <div className='button-feliz' onClick={handleDescobrir}>
                 <div className='text-feliz2'>
                     Descobrir atividades legais <br />
                     em São Carlos

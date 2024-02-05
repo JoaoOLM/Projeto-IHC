@@ -1,6 +1,12 @@
 import React from 'react'
 import './Options.css';
 import { useNavigate } from 'react-router-dom';
+import {
+    MdSpa,
+    MdAccessTime,
+    MdFace,
+    MdMusicNote,
+} from 'react-icons/md';
 
 import ImagemRobo from "../../assets/home/robot-svgrepo-com.svg"
 
@@ -48,14 +54,27 @@ const Options = () => {
             {/* Botões */}
             <div className='button-container'>
                 <div className='column'>
-                    <button className='button-option' onClick={handleAnalise}>Análise Facial</button>
-                    <button className='button-option' onClick={handleMusica}>Música</button>
+                    <div className='button-option' onClick={handleAnalise}>
+                        <MdFace size={70} color='#fff' />
+                        <div>Análise Facial</div>
+                    </div>
+                    <div className='button-option' onClick={handleMusica}>
+                        <MdMusicNote size={70} color='#fff' />
+                        <div>Música</div>
+                    </div>
                 </div>
                 <div className='column'>
-                    <button className='button-option' onClick={handleRespiracao}>Respiração</button>
-                    <button className='button-option' onClick={handleMeditacao}>Meditação</button>
+                    <div className='button-option' onClick={handleRespiracao}>
+                        <MdAccessTime size={70} color='#fff' />
+                        <div>Respiração</div>
+                    </div>
+                    <div className='button-option' onClick={handleMeditacao}>
+                        <MdSpa size={70} color='#fff' />
+                        <div>Meditação</div>
+                    </div>
                 </div>
             </div>
+
 
         </div>
     );

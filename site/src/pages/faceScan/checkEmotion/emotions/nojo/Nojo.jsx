@@ -1,10 +1,27 @@
 import React from 'react'
 import './Nojo.css';
+import { useNavigate } from 'react-router-dom';
 //import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
+
+import {
+    MdSpa,
+    MdAccessTime,
+} from 'react-icons/md';
 
 import ImagemRoboNojo from "../../../../../assets/home/robo-nojo.svg"
 
 const Nojo = () => {
+    const navigate = useNavigate();
+
+    const handleMeditacao = () => {
+        // Aqui você define para qual rota deseja redirecionar
+        navigate('/meditation');
+    };
+
+    const handleRespiracao = () => {
+        // Aqui você define para qual rota deseja redirecionar
+        navigate('/respiration');
+    };
 
     return (
         //getExpressionByNumber(9);
@@ -20,14 +37,16 @@ const Nojo = () => {
             </div>
             <div className='conjunto'>
                 <div className='column1'>
-                    <div className='button-nojo'>
+                    <div className='button-nojo' onClick={handleRespiracao}>
+                        <MdAccessTime size={70} color='#fff' />
                         <div className='text-button-nojo'>
                             Respiração
                         </div>
                     </div>
                 </div>
-                <div className='column2'>
+                <div className='column2' onClick={handleMeditacao}>
                     <div className='button-nojo'>
+                        <MdSpa size={70} color='#fff' />
                         <div className='text-button-nojo'>
                             Meditação
                         </div>

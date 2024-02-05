@@ -15,8 +15,8 @@ const Triste = () => {
             <div className='text-triste'>
                 Sinto muito ouvir que você está se sentindo triste. Aqui estão algumas sugestões que podem ajudá-lo a lidar com a tristeza:
             </div>
-            <div className='conjunto'>
-                <div className='column1'>
+            <div className='conjunto-triste'>
+                <div className='column-triste1'>
                     <div className='text-triste2'>
                         1.Converse com alguem: <br /> <br />
                         Às vezes, compartilhar seus sentimentos 
@@ -24,7 +24,7 @@ const Triste = () => {
                         ou profissional pode ajudar a aliviar a tristeza
                     </div>
                 </div>
-                <div className='column2'>
+                <div className='column-triste2'>
                 <div className='text-triste2'>
                     2.Pratique atividades: <br /> <br />
                     Desenvolver atividades que você gosta pode 
@@ -34,7 +34,7 @@ const Triste = () => {
                 </div>
             </div>
             <div className='conjunto'>
-                <div className='column1'>
+                <div className='column-triste1'>
                     <div className='text-triste2'>
                         3.Cuide de si mesmo: <br /> <br />
                         Tire um tempo para cuidar de si mesmo. Isso pode 
@@ -42,7 +42,7 @@ const Triste = () => {
                         ou fazer algo que o faça sentir-se bem consigo mesmo.
                     </div>
                 </div>
-                <div className='column2'>
+                <div className='column-triste2'>
                     <div className='text-triste2'>
                         4.Ajuda profissional: <br /> <br />
                         Se você está assim por um longo período de tempo e está afetando sua vida 

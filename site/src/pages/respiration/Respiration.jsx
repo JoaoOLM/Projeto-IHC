@@ -2,6 +2,11 @@ import React, { useState, useEffect } from 'react';
 import ImagemRobo from "../../assets/home/robot-svgrepo-com.svg";
 import './Respiration.css';
 
+import {
+  MdPlayArrow,
+  MdPause,
+} from 'react-icons/md';
+
 function Respiration() {
   const [isAnimating, setIsAnimating] = useState(false);
   const [iterationCount, setIterationCount] = useState(6);
@@ -10,27 +15,27 @@ function Respiration() {
   const [showControls, setShowControls] = useState(true); // Estado para mostrar/ocultar controles
   const [displayText, setDisplayText] = useState(""); // Estado para exibir o texto expire/inspire
 
-  useEffect(() => {   // ANIMAÇÃO INSPIRE E EXPIRE
+  useEffect(() => {
     let timer = null;
     let count = 0;
 
     const updateText = () => {
-      if (count === 0) {
+      if (count % 2 === 0) {
         setDisplayText("Inspire");
       } else {
-        setDisplayText(prevText => (prevText === "Inspire" ? "Expire" : "Inspire"));
+        setDisplayText("Expire");
       }
-      count = count + 1; // Alternar entre 0 e 1
+      count = count + 1; // Incrementa o contador
     };
 
     if (isAnimating) {
       timer = setInterval(updateText, 5000);
     } else {
-      setDisplayText(""); // Limpar o texto quando a animação parar
+      setDisplayText(""); // Limpa o texto quando a animação para
     }
 
     return () => clearInterval(timer);
-  }, [isAnimating, displayText]);
+  }, [isAnimating]);
 
   const toggleAnimation = () => {   //Animações após click START
     setIsAnimating(prevState => !prevState); // Inverte o estado de animação
@@ -79,14 +84,14 @@ function Respiration() {
 
   return (
     <div className="Respiration">
-      <div className='text-options'>
+      <div className='text-respiration'>
         <p>Respiração<br />Guiada</p>
       </div>
       <div className='row'>
-        <div className='image-robot-options'>
+        <div className='image-robot-respiration'>
           <img src={ImagemRobo} alt='Descrição da imagem' width='105' height='70' />
         </div>
-        <div className='text-options'>
+        <div className='text-respiration'>
           {textInsideCircle}
         </div>
       </div>
@@ -96,24 +101,24 @@ function Respiration() {
         {showControls && !isAnimating && (
           <>
             <div onClick={() => setIteration(6)}>
-              <button className='button-option'>1 MINUTOS</button>
+              <button className='button-respiration'>1 MINUTOS</button>
             </div>
             <div onClick={() => setIteration(18)}>
-              <button className='button-option'>3 MINUTOS</button>
+              <button className='button-respiration'>3 MINUTOS</button>
             </div>
             <div onClick={() => setIteration(30)}>
-              <button className='button-option'>5 MINUTOS</button>
+              <button className='button-respiration'>5 MINUTOS</button>
             </div>
             <div onClick={() => setIteration(60)}>
-              <button className='button-option'>10 MINUTOS</button>
+              <button className='button-respiration'>10 MINUTOS</button>
             </div>
           </>
         )}
       </div>
 
-      {/*Bloco Animação do Círculo*/}
+      {/* Bloco Animação do Círculo */}
       <button className={isAnimating ? 'animated' : 'circular-button'} onClick={toggleAnimation}>
-        {isAnimating ? '' : 'START'}
+        {isAnimating ? <MdPause size={60} color='#fff' /> : <MdPlayArrow size={60} color='#fff' />}
       </button>
       <button className='circular-button2'> </button>
       <div className="text-expire-inspire">

@@ -12,10 +12,13 @@ html, body {
 }
 
 .accessibility-tab {
-    position: absolute;
+    z-index: 2; /* Valor maior que o z-index da página */
+    position: fixed; /* Alterado para fixed para manter a posição ao rolar */
     right: 0;
     top: 0;
-    width: 200px;
-    height: 100%;
-    background-color: #ddd;
+    bottom: 0; /* Estende a sidebar até o final da página */
+    width: 250px; /* Largura inicial da sidebar, ajuste conforme necessário */
+    background-color: #6750A4;
+    border-radius: 10px 0px 0px 10px; /* Arredonda apenas o lado direito */
+    overflow-y: auto; /* Adicionado para rolar se o conteúdo for maior que a altura */
 }
