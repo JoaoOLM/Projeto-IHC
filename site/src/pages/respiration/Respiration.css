@@ -1,3 +1,5 @@
+@import '~typeface-righteous/index.css';
+
 .Respiration {
     display: flex;
     flex-direction: column;
@@ -7,28 +9,29 @@
     background-color: #FEF7FF;
 }
 
-
-
  /*texto INSPIRE E EXPIRE*/
 .text-expire-inspire {
     display: flex;
     justify-content: center;
+    font-family: 'Righteous', sans-serif;
 }
 
 .inspire-text {
-    font-weight: bold;
+    font-weight: regular;
     color: #6750A4;
+    font-family: 'Righteous', sans-serif;
 }
 
 .expire-text {
-    font-style: bold;
+    font-weight: regular;
     color: #6750A4;
+    font-family: 'Righteous', sans-serif;
 }
 
 
 
 /*Textos Robo e Respiração guiada*/
-.text-options {                  
+.text-respiration {                  
     text-align: center;
     margin-top: 10px;
     font-family: 'Rigtheous', sans-serif;
@@ -44,11 +47,12 @@
     margin-top: 20px;
 }
 
-.button-option {
+.button-respiration {
     display: flex;
-    width: 200px; 
+    width: 200px;
     height: 50px;
     justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
     padding: 10px 20px;
     font-size: 16px;
     background-color: #6750A4;
@@ -56,7 +60,9 @@
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    font-family: 'Righteous', sans-serif;
 }
+
 
 .circular-button {
     position: absolute;

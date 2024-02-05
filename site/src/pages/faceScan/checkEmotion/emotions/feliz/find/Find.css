@@ -1,6 +1,6 @@
 @import '~typeface-righteous/index.css';
 
-.text-neutro {
+.text-find {
     text-align: justify;
     font-family: 'Righteous', sans-serif;
     font-size: 30px;
@@ -10,15 +10,17 @@
     margin-top: 20px;
 }
 
-.text-neutro-h2 {
+.text-find2 {
     text-align: justify;
     font-family: 'Righteous', sans-serif;
     font-size: 25px;
     font-weight: regular;
-    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
 }
 
-.neutro {
+.Find {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,34 +29,7 @@
     background-color: #FEF7FF;
 }
 
-.imagem-neutro{
-    display: flex;
-}
-
-.column1,
-.column2 {
-    flex-grow: 1; /* Ocupar o espaço disponível igualmente */
-}
-
-.column1{
-    display:flex;
-    flex-direction: column;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.column2{
-    display:flex;
-    flex-direction: column;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.conjunto{
-    display: flex;
-}
-
-.button-neutro {
+.button-find {
     border: none;
     border-radius: 50px;
     padding: 20px 80px;
@@ -62,12 +37,5 @@
     color: #fff;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 40px;
-}
-
-.text-neutro-botao {
-    text-align: center;
-    font-family: 'Righteous', sans-serif;
-    font-size: 20px;
-    font-weight: regular;
+    margin-top: 10px;
 }

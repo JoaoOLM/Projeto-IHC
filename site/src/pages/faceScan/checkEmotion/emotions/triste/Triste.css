@@ -31,20 +31,25 @@
     margin-top: 20px;
 }
 
-.column1{
+.column-triste1,
+.column-triste2 {
+    flex-grow: 1; /* Ocupar o espaço disponível igualmente */
+}
+
+.column-triste1{
     display:flex;
     flex-direction: column;
     margin-left: 200px;
     margin-right: 20px;
 }
 
-.column2{
+.column-triste2{
     display:flex;
     flex-direction: column;
-    margin-left: 20px;
     margin-right: 200px;
+    margin-left: 20px;
 }
 
-.conjunto{
+.conjunto-triste{
     display: flex;
 }

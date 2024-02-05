@@ -1,10 +1,18 @@
 import React from 'react'
 import './Medo.css';
+import { useNavigate } from 'react-router-dom';
 //import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '../../../../../components/api/api.js';
 
 import ImagemRoboMedo from "../../../../../assets/home/robo-medo.svg"
 
 const Medo = () => {
+
+    const navigate = useNavigate();
+
+    const handleDicas = () => {
+        // Aqui você define para qual rota deseja redirecionar
+        navigate('/Fear/Tips');
+    };
 
     return (
         //getExpressionByNumber(9);
@@ -21,7 +29,7 @@ const Medo = () => {
                 é normal sentir medo de vez em quando. Vamos explorar juntos 
                 maneiras de enfrentar esse sentimento.
             </div>
-            <div className='button-medo'>
+            <div className='button-medo' onClick={handleDicas}>
                 Dicas
             </div>
         </div>

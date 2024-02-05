@@ -12,7 +12,9 @@ import FaceScan from '../pages/faceScan/FaceScan'
 import ChechEmotion from '../pages/faceScan/checkEmotion/CheckEmotion'
 import EmotionFail from '../pages/faceScan/checkEmotion/emotionFail/EmotionFail'
 import Feliz from '../pages/faceScan/checkEmotion/emotions/feliz/Feliz'
+import FelizFind from '../pages/faceScan/checkEmotion/emotions/feliz/find/Find'
 import Medo from '../pages/faceScan/checkEmotion/emotions/medo/Medo'
+import MedoDicas from '../pages/faceScan/checkEmotion/emotions/medo/dicas/Dicas'
 import Nervoso from '../pages/faceScan/checkEmotion/emotions/nervoso/Nervoso'
 import Neutro from '../pages/faceScan/checkEmotion/emotions/neutro/Neutro'
 import Nojo from '../pages/faceScan/checkEmotion/emotions/nojo/Nojo'
@@ -36,7 +38,9 @@ export const AppRoutes = ( ) => {
             <Route path="/checkemotion/:emocao" element={<ChechEmotion />}/>
             <Route path="/checkemotion/emotionfail" element={<EmotionFail />}/>
             <Route path="Happy" element={<Feliz />}/>
+            <Route path="Happy/Find" element={<FelizFind />}/>
             <Route path="Fear" element={<Medo />}/>
+            <Route path="Fear/Tips" element={<MedoDicas />}/>
             <Route path="Nervous" element={<Nervoso />}/>
             <Route path="Neutral" element={<Neutro />}/>
             <Route path="Disgust" element={<Nojo />}/>

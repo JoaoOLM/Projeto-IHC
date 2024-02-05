@@ -32,10 +32,10 @@ const Neutro = () => {
                         1.Auto-reflexão:
                     </div>
                     <div className='text-neutro-h2'>
-                    Reserve um tempo para refletir sobre 
-                    sobre sua vida. Pergunte a si mesmo se 
-                    há algo específico que esteja causando 
-                    essa neutralidade emocional.
+                        Reserve um tempo para refletir sobre 
+                        sobre sua vida. Pergunte a si mesmo se 
+                        há algo específico que esteja causando 
+                        essa neutralidade emocional.
                     </div>
                 </div>
                 <div className='column2'>
@@ -43,10 +43,10 @@ const Neutro = () => {
                         2.Tente coisas novas:
                     </div>
                     <div className='text-neutro-h2'>
-                    A rotina e monotonia podem 
-                    contribuir para um estado neutro. 
-                    Tente sair da sua zona de conforto 
-                    e tentar atividades novas.
+                        A rotina e monotonia podem 
+                        contribuir para um estado neutro. 
+                        Tente sair da sua zona de conforto 
+                        e tentar atividades novas.
                     </div>
                 </div>
             </div>

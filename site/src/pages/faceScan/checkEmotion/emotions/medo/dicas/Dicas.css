@@ -1,6 +1,6 @@
 @import '~typeface-righteous/index.css';
 
-.text-nojo {
+.text-dicas {
     text-align: justify;
     font-family: 'Righteous', sans-serif;
     font-size: 30px;
@@ -10,7 +10,17 @@
     margin-top: 20px;
 }
 
-.nojo {
+.text-dicas-h2 {
+    text-align: justify;
+    font-family: 'Righteous', sans-serif;
+    font-size: 25px;
+    font-weight: regular;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.dicas {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,44 +29,51 @@
     background-color: #FEF7FF;
 }
 
-.column1{
+.imagem-dicas{
+    display: flex;
+}
+
+.column3{
     display:flex;
     flex-direction: column;
     margin-left: 200px;
     margin-right: 20px;
 }
 
-.column2{
+.column4{
     display:flex;
     flex-direction: column;
     margin-left: 20px;
     margin-right: 200px;
 }
 
-.conjunto{
+.conjunto1{
     display: flex;
 }
 
-.button-nojo {
-    margin-top: 40px;
-    margin-bottom: 50px;
-    width: 270px;
-    height: 120px;
-    padding: 10px 20px;
-    font-size: 16px;
+.button-dicas {
+    border: none;
+    border-radius: 50px;
+    padding: 20px 80px;
     background-color: #6750A4;
     color: #fff;
-    border: none;
-    border-radius: 40px;
     cursor: pointer;
-    font-family: 'Righteous', sans-serif;
-    display: flex;
-    flex-direction: column; /* Empilha os itens verticalmente */
-    align-items: center;
-    justify-content: center; /* Centraliza os itens horizontalmente */
+    font-size: 16px;
+    margin-top: 40px;
 }
 
-.text-button-nojo{
+.button-dicas2 {
+    border: none;
+    border-radius: 50px;
+    padding: 20px 80px;
+    background-color: #6750A4;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 70px;
+}
+
+.text-dicas-botao {
     text-align: center;
     font-family: 'Righteous', sans-serif;
     font-size: 20px;
