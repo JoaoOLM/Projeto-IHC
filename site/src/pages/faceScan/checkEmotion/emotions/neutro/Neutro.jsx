@@ -23,7 +23,7 @@ const Neutro = () => {
             </div>
             <div className='text-neutro'>
                 Se você está se sentindo 
-                neutro, pode ser  esteja tranquilo, mas 
+                neutro, pode ser que esteja tranquilo, mas 
                 também pode ser uma falta de emoção. 
                 Vou te dar algumas dicas.
             </div>
