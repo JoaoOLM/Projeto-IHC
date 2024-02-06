@@ -13,6 +13,7 @@ import {
 
 const Surpresa = () => {
     getExpressionByNumber(9);
+    getExpressionByNumber(53);
     const navigate = useNavigate();
 
     const handleMeditacao = () => {

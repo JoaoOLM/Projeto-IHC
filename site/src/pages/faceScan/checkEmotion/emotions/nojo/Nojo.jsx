@@ -11,7 +11,8 @@ import {
 import ImagemRoboNojo from "../../../../../assets/home/robo-nojo.svg"
 
 const Nojo = () => {
-    getExpressionByNumber(9);
+    getExpressionByNumber(26);
+    getExpressionByNumber(21);
     const navigate = useNavigate();
 
     const handleMeditacao = () => {

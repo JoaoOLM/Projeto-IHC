@@ -5,7 +5,7 @@ import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '.
 import ImagemRoboTriste from "../../../../../assets/home/robo-triste.svg"
 
 const Triste = () => {
-    getExpressionByNumber(9);
+    getExpressionByNumber(17);
     return (
         //getExpressionByNumber(9);
         <div className='triste'>

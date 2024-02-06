@@ -6,7 +6,8 @@ import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '.
 import ImagemRoboMedo from "../../../../../assets/home/robo-medo.svg"
 
 const Medo = () => {
-    getExpressionByNumber(9);
+    getExpressionByNumber(37);
+    getExpressionByNumber(82);
     const navigate = useNavigate();
 
     const handleDicas = () => {

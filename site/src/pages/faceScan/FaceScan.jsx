@@ -41,7 +41,7 @@ const FaceScan = () => {
       if (dominantEmotion === lastEmotion) {
         setEmotionCount((prevCount) => prevCount + 1);
 
-        if (emotionCount + 1 === 30) {
+        if (emotionCount + 1 === 15) {
           setEmotionCount(0);
           setLastEmotion('');
           stopSdk();

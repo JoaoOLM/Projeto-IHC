@@ -6,7 +6,8 @@ import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '.
 import ImagemRoboNervoso from "../../../../../assets/home/robo-nervoso.svg"
 
 const Nervoso = () => {
-    getExpressionByNumber(9);
+    getExpressionByNumber(11);
+    getExpressionByNumber(45);
     const navigate = useNavigate();
 
     const handleRespiracao = () => {

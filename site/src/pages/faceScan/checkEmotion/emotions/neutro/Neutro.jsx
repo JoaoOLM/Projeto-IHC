@@ -6,7 +6,8 @@ import { getExpressionByNumber, getExpressionByBits, getExpressionList } from '.
 import ImagemRoboNeutro from "../../../../../assets/home/robo-neutro.svg"
 
 const Neutro = () => {
-    getExpressionByNumber(9);
+    getExpressionByNumber(45);
+    getExpressionByNumber(10);
     const navigate = useNavigate();
 
     const handleMeditacao = () => {
